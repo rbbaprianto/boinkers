@@ -631,8 +631,7 @@ async function main() {
     console.log(`Proxy: ${proxies.length}`);
     process.exit(1);
   }
-  console.log(colors.yellow("LDK airdrop | ZaLo: 0965814833"));
-  console.log(colors.yellow("Telegram: https://web.telegram.org/k/#@magicdk79"));
+  console.log(colors.yellow("Tool được phát triển bởi nhóm tele Airdrop Hunter Siêu Tốc (https://t.me/airdrophuntersieutoc)"));
 
   if (!settings.USE_PROXY) {
     console.log(`You are running bot without proxies, enable use proxy by key USE_PROXY in file .env`.yellow);
@@ -641,7 +640,7 @@ async function main() {
 
   const { endpoint: hasIDAPI, message } = await checkBaseUrl();
   if (!hasIDAPI) return console.log(`Không thể tìm thấy ID API, thử lại sau!`.red);
-  // console.log(`${message}`.yellow);
+  console.log(`${message}`.yellow);
   // process.exit();
   queryIds.map((val, i) => new Boink(val, i, proxies[i], hasIDAPI, tokens).createUserAgent());
 
