@@ -28,7 +28,8 @@ class Boink {
       "Sec-Fetch-Site": "same-origin",
       "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
       Cookie:
-        "cboink.production.sid=s%3AdW4oO4-ZV4lfgCgC6CoyJV3ZwUWpvEIQ.vo6IaR00WYVlINdo7KofNspXnS5gVwQTgRgJm4BLD7w; _ga=GA1.1.316220204.1741159032; cf_clearance=L3ICbRgcqnUHg7BHJ20qyNioj1FriMsg3ca9JrQd.j8-1741159034-1.2.1.1-eRrx1yH4NekFdqFXA.6O44_5QmmZStt_yPhTcAKLnKIjB0Pg4HdnwnjKewXLoGqp_pQVdQUpZCOFwUV4Il6YvCpRdXCtlg7feso3VUiw2Xjb8OY4dTuB8WfAqoJJTqE2GGUiIK.ZMBmEtT3C8ErD3_NICzUmfrMzgl47krEzsOrsybpuabSXU.OgiuMU.12TDUfwKZr_b8hzZRXthtkGcibC1zC.OVrHyyU.x5csMwnzKNsmRhmd.YgScBmsYpo0MX_CLJUmOG8O7ucAPuYl2BScJDv48bcr6etrSqSkJhNsYa3YcakvplDS24cYkkxmEGU6A1Ji9gAsZLE93dyrBWYOUPV6IDn9TjcMs0BG6Xa8hUdSt9GSci0pswc10cMT4.oTG59zwNJHC9nLYWrjo0QNkO8dldcpmeJYmZlJPsk; _fbp=fb.1.1741159033196.450173099943643160; inpu1=1; ucc1=16; _ga_QGGLFFQ8M4=GS1.1.1741159031.1.1.1741159281.0.0.0; mp_8e903983fa8144170b628a5e084a2be3_mixpanel=%7B%22distinct_id%22%3A%20%22%24device%3A195652a65c9b18-0e873eca3431bd-4c657b58-144000-195652a65c9b18%22%2C%22%24device_id%22%3A%20%22195652a65c9b18-0e873eca3431bd-4c657b58-144000-195652a65c9b18%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%2C%22__mps%22%3A%20%7B%7D%2C%22__mpso%22%3A%20%7B%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D%2C%22__mpus%22%3A%20%7B%7D%2C%22__mpa%22%3A%20%7B%7D%2C%22__mpu%22%3A%20%7B%7D%2C%22__mpr%22%3A%20%5B%5D%2C%22__mpap%22%3A%20%5B%5D%2C%22__timers%22%3A%20%7B%22AppLoadingEnded%22%3A%201741159281810%7D%2C%22__alias%22%3A%20%2266e029cb499508f3cd5cc89e%22%2C%22%24user_id%22%3A%20%2266e029cb499508f3cd5cc89e%22%2C%22abClass%22%3A%20%22b%22%2C%22%24name%22%3A%20%22huyautomation2x%22%2C%22chatId%22%3A%205749675527%2C%22provider%22%3A%20%22telegram%22%2C%22currencySoft%22%3A%20993777%2C%22currencyCrypto%22%3A%202596191.7973676664%2C%22currentBoinkerId%22%3A%20%22Anubis%22%2C%22currentBoinkerLevel%22%3A%203%2C%22currentBoinkerLastUpdate%22%3A%20%222025-03-05T07%3A17%3A28.019Z%22%2C%22lastUpdateCompletedBoinkers%22%3A%20%222025-03-05T07%3A17%3A28.019Z%22%2C%22countOfCompletedBoinkers%22%3A%2010%2C%22lastLoginDate%22%3A%20%222025-03-05T07%3A17%3A28.498Z%22%2C%22registrationDate%22%3A%20%222024-09-10T11%3A13%3A15.621Z%22%2C%22daysSinceRegistration%22%3A%20175%2C%22slotMachineEnergy%22%3A%2010%2C%22slotMachineEnergyUsed%22%3A%20411%2C%22slotMachineBetsDone%22%3A%2076%2C%22slotMachineLastUpdated%22%3A%20%222024-10-18T04%3A41%3A24.915Z%22%2C%22wheelOfFortuneEnergy%22%3A%200%2C%22wheelOfFortuneLastUpdated%22%3A%20%222024-09-13T00%3A15%3A30.139Z%22%2C%22inviterId%22%3A%20%2266dfed5fcf59c389dfcaac27%22%2C%22isInvited%22%3A%20true%2C%22isWalletConnected%22%3A%20true%2C%22locale%22%3A%20%22en%22%2C%22platform%22%3A%20%22tdesktop%22%2C%22isTelegram%22%3A%20true%2C%22countOfPurchases%22%3A%200%2C%22lastPurchaseDate%22%3A%200%2C%22lastPurchaseValue%22%3A%200%2C%22maxPurchaseValue%22%3A%200%2C%22totalUSDValue%22%3A%200%7D",
+        "cboink.production.sid=s%3ApgdC32eh3it_V9NMYtzNCHDlRVtPzTE_.NsMPGKx1ayZKvbTY0Owtyq%2B2Z9DXMeKFyePfSpzx0RM; inpu1=1; ucc1=9; mp_8e903983fa8144170b628a5e084a2be3_mixpanel=%7B%22distinct_id%22%3A%20%22%24device%3A194eff8c8df860-05874e3d8d50ee-26011b51-1fa400-194eff8c8df860%22%2C%22%24device_id%22%3A%20%22194eff8c8df860-05874e3d8d50ee-26011b51-1fa400-194eff8c8df860%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%2C%22__mps%22%3A%20%7B%7D%2C%22__mpso%22%3A%20%7B%7D%2C%22__mpus%22%3A%20%7B%7D%2C%22__mpa%22%3A%20%7B%7D%2C%22__mpu%22%3A%20%7B%7D%2C%22__mpr%22%3A%20%5B%5D%2C%22__mpap%22%3A%20%5B%5D%2C%22__timers%22%3A%20%7B%7D%2C%22__alias%22%3A%20%2267a75507962cdfe8dcdc8f08%22%2C%22%24user_id%22%3A%20%2267a75507962cdfe8dcdc8f08%22%2C%22abClass%22%3A%20%22a%22%2C%22%24name%22%3A%20%22complox%22%2C%22%24avatar%22%3A%20%22https%3A%2F%2Ft.me%2Fi%2Fuserpic%2F320%2F0MAf6mA2ko6jj7WeswWrQcI0H88PccirkqsNCvY8NtXwhDyrAkaNYvzy_-wgSjps.svg%22%2C%22chatId%22%3A%205385805503%2C%22provider%22%3A%20%22telegram%22%2C%22currencySoft%22%3A%201291000%2C%22currencyCrypto%22%3A%20331821301.2054735%2C%22currentBoinkerId%22%3A%20%22Ringmaster51%22%2C%22currentBoinkerLevel%22%3A%203%2C%22currentBoinkerLastUpdate%22%3A%20%222025-03-10T02%3A48%3A57.512Z%22%2C%22lastUpdateCompletedBoinkers%22%3A%20%222025-03-10T02%3A48%3A57.512Z%22%2C%22countOfCompletedBoinkers%22%3A%201763%2C%22lastLoginDate%22%3A%20%222025-03-10T02%3A48%3A57.922Z%22%2C%22registrationDate%22%3A%20%222025-02-08T12%3A58%3A47.444Z%22%2C%22daysSinceRegistration%22%3A%2029%2C%22slotMachineEnergy%22%3A%20105430%2C%22slotMachineEnergyUsed%22%3A%201582815%2C%22slotMachineBetsDone%22%3A%2010664%2C%22slotMachineLastUpdated%22%3A%20%222025-03-10T01%3A48%3A15.642Z%22%2C%22wheelOfFortuneEnergy%22%3A%20315%2C%22wheelOfFortuneEnergyUsed%22%3A%203697%2C%22wheelOfFortuneBetsDone%22%3A%201211%2C%22wheelOfFortuneLastUpdated%22%3A%20%222025-03-10T01%3A48%3A15.514Z%22%2C%22countOfFriends%22%3A%200%2C%22campaign%22%3A%20%22MouseHomies%22%2C%22inviterId%22%3A%20%22679b370b2b84b164092ed01c%22%2C%22isInvited%22%3A%20true%2C%22isWalletConnected%22%3A%20true%2C%22locale%22%3A%20%22en%22%2C%22platform%22%3A%20%22unknown%22%2C%22isTelegram%22%3A%200%2C%22countOfPurchases%22%3A%200%2C%22lastPurchaseDate%22%3A%200%2C%22lastPurchaseValue%22%3A%200%2C%22maxPurchaseValue%22%3A%200%2C%22totalUSDValue%22%3A%200%7D",
+        "cboink.production.sid=s%3A2hXynyJTNPqYdZNtDAxVLvcIQYGEX9ZT.a4YQzr1UCwQwoUWqLtgz%2FgicDN7INdIakiAjJbl%2Foo4; ucc1=2; mp_8e903983fa8144170b628a5e084a2be3_mixpanel=%7B%22distinct_id%22%3A%20%22%24device%3A1957dc836cca8b-030e59daabc98a-26011d51-1fa400-1957dc836cda8b%22%2C%22%24device_id%22%3A%20%221957dc836cca8b-030e59daabc98a-26011d51-1fa400-1957dc836cda8b%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%2C%22__mps%22%3A%20%7B%7D%2C%22__mpso%22%3A%20%7B%7D%2C%22__mpus%22%3A%20%7B%7D%2C%22__mpa%22%3A%20%7B%7D%2C%22__mpu%22%3A%20%7B%7D%2C%22__mpr%22%3A%20%5B%5D%2C%22__mpap%22%3A%20%5B%5D%2C%22__timers%22%3A%20%7B%7D%2C%22__alias%22%3A%20%2267ce53f302ee234f8af86b2d%22%2C%22%24user_id%22%3A%20%2267ce53f302ee234f8af86b2d%22%2C%22abClass%22%3A%20%22d%22%2C%22%24name%22%3A%20%22boinker_6623876%22%2C%22%24avatar%22%3A%20%22https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FACg8ocLYt5WbsCy1IGH6382Nb5JgZ4txs2qp2nHDE-x6G-6-Nzzu9oQ%3Ds96-c%22%2C%22chatId%22%3A%207886257621%2C%22provider%22%3A%20%22google%22%2C%22currencySoft%22%3A%20177000%2C%22currencyCrypto%22%3A%200%2C%22currentBoinkerId%22%3A%20%22Nile%22%2C%22currentBoinkerLevel%22%3A%200%2C%22currentBoinkerLastUpdate%22%3A%20%222025-03-10T02%3A52%3A46.390Z%22%2C%22lastUpdateCompletedBoinkers%22%3A%20%222025-03-10T02%3A52%3A46.390Z%22%2C%22countOfCompletedBoinkers%22%3A%201%2C%22lastLoginDate%22%3A%20%222025-03-10T02%3A52%3A39.070Z%22%2C%22registrationDate%22%3A%20%222025-03-10T02%3A52%3A35.249Z%22%2C%22daysSinceRegistration%22%3A%200%2C%22slotMachineEnergy%22%3A%2060%2C%22slotMachineEnergyUsed%22%3A%202%2C%22slotMachineBetsDone%22%3A%201%2C%22slotMachineLastUpdated%22%3A%20%222025-03-10T02%3A52%3A39.450Z%22%2C%22wheelOfFortuneEnergy%22%3A%200%2C%22wheelOfFortuneLastUpdated%22%3A%20%222025-03-10T02%3A52%3A39.450Z%22%2C%22campaign%22%3A%20%22NordomFeb%22%2C%22inviterId%22%3A%20%22675186d5650070bffa858c1a%22%2C%22isInvited%22%3A%20false%2C%22isWalletConnected%22%3A%20false%2C%22locale%22%3A%20%22en%22%2C%22platform%22%3A%20%22unknown%22%2C%22isTelegram%22%3A%200%2C%22countOfPurchases%22%3A%200%2C%22lastPurchaseDate%22%3A%200%2C%22lastPurchaseValue%22%3A%200%2C%22maxPurchaseValue%22%3A%200%2C%22totalUSDValue%22%3A%200%2C%22%24search_engine%22%3A%20%22google%22%7D",
     };
     this.baseURL = baseURL;
     this.queryId = queryId;
@@ -188,7 +189,7 @@ class Boink {
           // this.log(`Invalid request for ${url}, maybe have new update from server | contact: https://t.me/airdrophuntersieutoc to get new update!`, "error");
           return { success: false, status: error.status, error: error.response.data.error || error.response.data.message || error.message };
         }
-        this.log(`Yêu cầu thất bại: ${url} | ${error.response.data ? JSON.stringify(error.response.data) : error.message} | đang thử lại...`, "warning");
+        this.log(`Request failed: ${url} | ${error.response.data ? JSON.stringify(error.response.data) : error.message} | nyobian deui...`, "warning");
         success = false;
         await sleep(settings.DELAY_BETWEEN_REQUESTS);
         if (currRetries == retries) return { success: false, error: error.message };
@@ -199,7 +200,7 @@ class Boink {
 
   async auth() {
     return this.makeRequest(
-      `${this.baseURL}/public/users/loginByTelegram?tgWebAppStartParam=boink1092680235&p=tdesktop`,
+      `${this.baseURL}/public/users/loginByTelegram?tgWebAppStartParam=boink7886257621&p=tdesktop`,
       "post",
       { initDataString: this.queryId, tokenForSignUp: "" },
       { isAuth: true }
@@ -272,14 +273,14 @@ class Boink {
       if (response.success) {
         const { newSoftCurrencyAmount, newSlotMachineEnergy, rank } = response.data;
         // if (newSoftCurrencyAmount < configResult.data?.)
-        this.log(`Nâng cấp thành công, Coin: ${newSoftCurrencyAmount} | Spin: ${newSlotMachineEnergy} | Rank: ${rank}`, "success");
+        this.log(`Upgraded successfully, Coin: ${newSoftCurrencyAmount} | Spin: ${newSlotMachineEnergy} | Rank: ${rank}`, "success");
         return { success: true };
       } else {
-        this.log(`Nâng cấp thất bại không đủ số dư!`, "warning");
+        this.log(`Upgrade failed insufficient balance!`, "warning");
         return { success: false };
       }
     } catch (error) {
-      this.log(`Chưa đủ coin để nâng cấp tiếp!`, "error");
+      this.log(`Not enough coins to upgrade!`, "error");
       return { success: false, error: error.message };
     }
   }
@@ -295,21 +296,21 @@ class Boink {
         if (nextBoosterTime) {
           nextBoosterTime = nextBoosterTime.plus({ hours: 2, minutes: 5 });
         }
-        this.log(`Mua boosts thành công! Coin: ${result.userPostBooster.newCryptoCurrencyAmount || 0}`, "success");
+        this.log(`Purchased boosts successfully! Coin: ${result.userPostBooster.newCryptoCurrencyAmount || 0}`, "success");
         this.log(`Rank: ${result.userPostBooster.rank}`, "info");
         if (nextBoosterTime) {
-          this.log(`Mua boosts tiếp theo vào: ${nextBoosterTime.toLocaleString(DateTime.DATETIME_MED)}`, "info");
+          this.log(`Buy next boosts: ${nextBoosterTime.toLocaleString(DateTime.DATETIME_MED)}`, "info");
         } else {
-          this.log(`Không thể xác định thời gian mua boosts tiếp theo.`, "warning");
+          this.log(`Cannot determine when to buy next boosts.`, "warning");
         }
 
         return { success: true, nextBoosterTime };
       } else {
-        this.log(`Lỗi khi mua boosts!`, "error");
+        this.log(`Error when buying boosts!`, "error");
         return { success: false, error: "API error" };
       }
     } catch (error) {
-      this.log(`Lỗi khi gửi yêu cầu mua boosts: ${error.message}`, "error");
+      this.log(`Error sending request to buy boosts: ${error.message}`, "error");
       return { success: false, error: error.message };
     }
   }
@@ -324,16 +325,16 @@ class Boink {
         if (response.success) {
           const result = response.data;
           this.log(
-            `Spin thành công (${result.outcome}): Coin: ${result.newSoftCurrencyAmount.toString().white}${` | Shit: `.magenta}${result.newCryptoCurrencyAmount.toFixed(2).white}`.magenta,
+            `Spin successfully (${result.outcome}): Coin: ${result.newSoftCurrencyAmount.toString().white}${` | Shit: `.magenta}${result.newCryptoCurrencyAmount.toFixed(2).white}`.magenta,
             "custom"
           );
           remainingSpins -= spinAmount;
         } else {
-          this.log(`Lỗi khi quay: Mã trạng thái ${response.status}`, "error");
+          this.log(`Error while recording: Status code ${response.status}`, "error");
           break;
         }
       } catch (error) {
-        this.log(`Lỗi khi gửi yêu cầu quay: ${error.message}`, "error");
+        this.log(`Error sending rotation request: ${error.message}`, "error");
         break;
       }
 
@@ -345,17 +346,17 @@ class Boink {
     try {
       const userInfoResponse = await this.getUserData();
       if (!userInfoResponse.success) {
-        this.log(`Không thể lấy thông tin người dùng. Mã trạng thái: ${userInfoResponse.status}`, "error");
+        this.log(`Unable to get user information. Status code: ${userInfoResponse.status}`, "error");
         return;
       }
       const userInfo = userInfoResponse.data;
 
-      this.log("Đang lấy danh sách nhiệm vụ...", "info");
+      this.log("Getting task list...", "info");
       const response = await this.getTasks();
       const responseTasks = await this.getTasksCompleted();
 
       if (!response.success || !responseTasks.success) {
-        this.log(`Không thể lấy danh sách nhiệm vụ. Mã trạng thái: ${response.status}`, "error");
+        this.log(`Unable to get task list. Status code: ${response.status}`, "error");
         return;
       }
       let tasksTodo = [];
@@ -374,7 +375,7 @@ class Boink {
       // this.log(`Đã lấy được ${rewardedActions.length} nhiệm vụ`, "success");
       // fs.appendFileSync("t.txt", JSON.stringify(tasksTodo));
       if (rewardedActions.length == 0) {
-        return this.log(`Không có nhiệm vụ nào cần thực hiện`, "warning");
+        return this.log(`There are no tasks to perform.`, "warning");
       }
       for (const action of rewardedActions) {
         await sleep(1);
@@ -406,9 +407,9 @@ class Boink {
         if (!canPerformTask) {
           if (waitTime) {
             const waitMinutes = Math.ceil((waitTime - currentTime) / (60 * 1000));
-            this.log(`Cần chờ ${waitMinutes} phút để tiếp tục làm nhiệm vụ ${nameId}`, "info");
+            this.log(`Need to wait ${waitMinutes} minutes to continue on duty ${nameId}`, "info");
           } else {
-            this.log(`Nhiệm vụ ${nameId} đã được hoàn thành trước đó`, "info");
+            this.log(`Mission ${nameId} has been completed before`, "info");
           }
           continue;
         }
@@ -419,17 +420,17 @@ class Boink {
           try {
             const clickResponse = await this.completeTask(nameId);
             // console.log(clickResponse);
-            this.log(`Làm nhiệm vụ ${nameId.yellow} | trạng thái: ${`pending`.yellow}`);
+            this.log(`Do quest ${nameId.yellow} | status: ${`pending`.yellow}`);
           } catch (clickError) {
-            this.log(`Lỗi khi làm nhiệm vụ ${nameId}: ${clickError.message}`, "error");
+            this.log(`Error while doing the task ${nameId}: ${clickError.message}`, "error");
             if (clickError.response) {
-              this.log(`Chi tiết lỗi: ${JSON.stringify(clickError.response.data)}`, "error");
+              this.log(`Error details: ${JSON.stringify(clickError.response.data)}`, "error");
             }
             continue;
           }
 
           if (action.secondsToAllowClaim > 0) {
-            this.log(`Đợi ${action.secondsToAllowClaim} giây...`);
+            this.log(`Waiting for ${action.secondsToAllowClaim} seconds...`);
             await sleep(action.secondsToAllowClaim);
           }
 
@@ -438,21 +439,21 @@ class Boink {
             if (claimResponse.success && claimResponse.data) {
               const result = claimResponse.data;
               const reward = result.prizeGotten;
-              this.log(`Hoàn thành nhiệm vụ ${nameId} thành công | Phần thưởng: ${reward || JSON.stringify(result)}`, "success");
+              this.log(`Completed quest ${nameId} successfully | Reward: ${reward || JSON.stringify(result)}`, "success");
             } else {
-              this.log(`Không thể nhận thưởng cho ${nameId} | ${JSON.stringify(claimResponse)}`, "error");
+              this.log(`Unable to claim reward for ${nameId} | ${JSON.stringify(claimResponse)}`, "error");
             }
           } catch (claimError) {
-            this.log(`Lỗi khi nhận thưởng cho ${nameId}: thời gian chờ vẫn còn!`, "warning");
+            this.log(`Error claiming reward for ${nameId}: timeout still available!`, "warning");
           }
         }
 
         await sleep(1);
       }
     } catch (error) {
-      this.log(`Lỗi khi thực hiện các nhiệm vụ: ${error.message}`, "error");
+      this.log(`Error while performing tasks: ${error.message}`, "error");
       if (error.response) {
-        this.log(`Chi tiết lỗi: ${JSON.stringify(error.response.data)}`, "error");
+        this.log(`Error details: ${JSON.stringify(error.response.data)}`, "error");
       }
     }
   }
