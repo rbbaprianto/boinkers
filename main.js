@@ -121,7 +121,8 @@ class Boink {
   }
 
   async log(msg, type = "info") {
-    const accountPrefix = `[Account ${this.accountIndex + 1}]`;
+    //const accountPrefix = `[Account ${this.accountIndex + 1}]`;
+    const accountPrefix = `Account ${this.accountIndex + 1} | ${firstName} ${lastName}`;
     let ipPrefix = "[Local IP]";
     if (settings.USE_PROXY) {
       ipPrefix = this.proxyIP ? `[${this.proxyIP}]` : "[Unknown IP]";
