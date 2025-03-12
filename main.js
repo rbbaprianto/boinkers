@@ -111,7 +111,7 @@ class Boink {
     try {
       return fs.readFileSync("proxy.txt", "utf8").split("\n").filter(Boolean);
     } catch (error) {
-      this.log("Không thể đọc file proxy.txt", "error");
+      this.log("Could not read file proxy.txt", "error");
       return [];
     }
   }
@@ -121,7 +121,7 @@ class Boink {
   }
 
   async log(msg, type = "info") {
-    const accountPrefix = `[Tài khoản ${this.accountIndex + 1}]`;
+    const accountPrefix = `[Account ${this.accountIndex + 1}]`;
     let ipPrefix = "[Local IP]";
     if (settings.USE_PROXY) {
       ipPrefix = this.proxyIP ? `[${this.proxyIP}]` : "[Unknown IP]";
@@ -186,7 +186,6 @@ class Boink {
         return { success: true, data: response.data };
       } catch (error) {
         if (error.status < 500 && error.status >= 400 && error.status != 429) {
-          // this.log(`Invalid request for ${url}, maybe have new update from server | contact: https://t.me/airdrophuntersieutoc to get new update!`, "error");
           return { success: false, status: error.status, error: error.response.data.error || error.response.data.message || error.message };
         }
         this.log(`Request failed: ${url} | ${error.response.data ? JSON.stringify(error.response.data) : error.message} | nyobian deui...`, "warning");
@@ -632,7 +631,7 @@ async function main() {
     console.log(`Proxy: ${proxies.length}`);
     process.exit(1);
   }
-  console.log(colors.yellow("Tool developed by Airdrop Hunter Super Speed ​​tele team (https://t.me/airdrophuntersieutoc)"));
+  console.log(colors.yellow("Bismillah dulu semoga ga Banned!)"));
 
   if (!settings.USE_PROXY) {
     console.log(`You are running bot without proxies, enable use proxy by key USE_PROXY in file .env`.yellow);
