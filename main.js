@@ -372,7 +372,7 @@ class Boink {
       }
       rewardedActions = tasksTodo.filter((action) => !action?.verification && !settings.SKIP_TASKS.includes(action.nameId));
       // rewardedActions = rewardedActions.filter((action) => !action.totalCurrencySoftAwarded && !settings.SKIP_TASKS.includes(action.nameId));
-      // this.log(`Đã lấy được ${rewardedActions.length} nhiệm vụ`, "success");
+      // this.log(`${rewardedActions.length} task obtained`, "success");
       // fs.appendFileSync("t.txt", JSON.stringify(tasksTodo));
       if (rewardedActions.length == 0) {
         return this.log(`There are no tasks to perform.`, "warning");
@@ -461,24 +461,24 @@ class Boink {
   async handleAdTask(nameId, providerId) {
     try {
       await this.clickAds(nameId);
-      this.log(`Đã click nhiệm vụ quảng cáo ${nameId}`, "success");
+      this.log(`Clicked ad task ${nameId}`, "success");
       await new Promise((resolve) => setTimeout(resolve, 2000));
       await this.watchAd({ providerId });
-      this.log(`Đã xác nhận xem quảng cáo cho ${nameId}`, "success");
+      this.log(`Confirmed viewing ad for ${nameId}`, "success");
       await new Promise((resolve) => setTimeout(resolve, 2000));
-      this.log(`Gửi yêu cầu nhận thưởng cho nhiệm vụ quảng cáo ${nameId}...`, "info");
+      this.log(`Sending reward request for ad task ${nameId}...`, "info");
       const claimResponse = await this.claimTask(nameId);
 
       if (claimResponse.success) {
         const result = claimResponse.data;
         const reward = result.prizeGotten;
-        this.log(`Hoàn thành nhiệm vụ quảng cáo ${nameId} thành công | Phần thưởng: ${reward}`, "success");
+        this.log(`${nameId} advertising task successfully completed | Reward: ${reward}`, "success");
       } else {
-        this.log(`Không thể nhận thưởng cho nhiệm vụ quảng cáo ${nameId}. Mã trạng thái: ${claimResponse.status}`, "error");
+        this.log(`Unable to claim reward for ${nameId} advertising task. Status code: ${claimResponse.status}`, "error");
+        }
+      } catch (error) {
+        this.log(`Error processing ${nameId} advertising task: waiting time still available!`, "error");
       }
-    } catch (error) {
-      this.log(`Lỗi khi xử lý nhiệm vụ quảng cáo ${nameId}: thời gian chờ vẫn còn!`, "error");
-    }
   }
 
   async checkProxyIP(proxy) {
@@ -491,10 +491,10 @@ class Boink {
       if (response.status === 200) {
         return response.data.ip;
       } else {
-        throw new Error(`Không thể kiểm tra IP của proxy. Status code: ${response.status}`);
+        throw new Error(`Could not check proxy IP. Status code: ${response.status}`);
       }
     } catch (error) {
-      throw new Error(`Error khi kiểm tra IP của proxy: ${error.message}`);
+      throw new Error(`Error when checking proxy IP: ${error.message}`);
     }
   }
 
@@ -510,11 +510,11 @@ class Boink {
       this.log("Token not found or expired, login...", "warning");
       loginResult = await this.loginByTelegram();
       if (loginResult.success) {
-        this.log("Đăng nhập thành công!", "success");
+        this.log("Login successful!", "success");
         saveToken(userId, loginResult.token);
         return loginResult.token;
       } else {
-        this.log(`Đăng nhập không thành công! ${loginResult.status || loginResult.error}`, "error");
+        this.log(`Login failed! ${loginResult.status || loginResult.error}`, "error");
         return null;
       }
     }
@@ -537,12 +537,12 @@ class Boink {
       }
     }
     const timesleep = getRandomNumber(settings.DELAY_START_BOT[0], settings.DELAY_START_BOT[1]);
-    console.log(`=========Tài khoản ${this.accountIndex + 1}| ${firstName + " " + lastName} | ${settings.USE_PROXY ? this.proxyIP : "No proxy"} | Bắt đầu sau ${timesleep} giây...`.green);
+    console.log(`=========Account ${this.accountIndex + 1}| ${firstName + " " + lastName} | ${settings.USE_PROXY ? this.proxyIP : "No proxy"} | Starts in ${timesleep} seconds...`.green);
     await sleep(timesleep);
 
     const token = await this.getValidToken();
     if (!token) {
-      this.log("Không tìm thấy token hoặc token đã hết hạn...skiping", "error");
+      this.log("No token found or token expired...skiping", "error");
       return;
     }
     this.token = token;
@@ -553,7 +553,7 @@ class Boink {
       if (userInfoResult.success) {
         const userInfo = userInfoResult.data;
         this.log(
-          `Amount bonkiers: ${userInfo?.boinkers?.completedBoinkers} | Shit Balance: ${userInfo?.currencyCrypto || 0} | Spin: ${userInfo.gamesEnergy.slotMachine.energy} | Level: ${
+          `Amount boinkers: ${userInfo?.boinkers?.completedBoinkers} | Shit Balance: ${userInfo?.currencyCrypto || 0} | Spin: ${userInfo.gamesEnergy.slotMachine.energy} | Level: ${
             userInfo.boinkers.currentBoinkerProgression.level
           } | Coin Balance: ${userInfo.currencySoft || 0}`,
           "info"
@@ -564,11 +564,11 @@ class Boink {
         if (!lastClaimedTime || currentTime > lastClaimedTime.plus({ hours: 2, minutes: 5 })) {
           const boosterResult = await this.claimBooster(userInfo.gamesEnergy.slotMachine.energy);
           if (!boosterResult.success) {
-            this.log(`Không thể claim booster: ${boosterResult.error}`, "error");
+            this.log(`Cannot claim booster: ${boosterResult.error}`, "error");
           }
         } else {
           const nextBoosterTime = lastClaimedTime.plus({ hours: 2, minutes: 5 });
-          this.log(`Thời gian mua boosts tiếp theo: ${nextBoosterTime.toLocaleString(DateTime.DATETIME_MED)}`, "info");
+          this.log(`Time to buy next boosts: ${nextBoosterTime.toLocaleString(DateTime.DATETIME_MED)}`, "info");
         }
 
         const spinuser = await this.getUserData();
@@ -576,10 +576,10 @@ class Boink {
         for (const type of ["slotMachine"]) {
           const spins = spinUser.gamesEnergy[type].energy;
           if (spins > 0) {
-            this.log(`Bắt đầu quay ${type} với ${spins} lượt quay`, "yellow");
+            this.log(`Starting spinning ${type} with ${spins} spins`, "yellow");
             await this.spinSlotMachine(type, spins);
           } else {
-            this.log("Không có lượt quay nào", "warning");
+            this.log("No spins", "warning");
           }
         }
 
@@ -591,10 +591,10 @@ class Boink {
         //   upgradeSuccess = upgradeResult.success;
         // }
       } else {
-        return this.log(`Không thể lấy thông tin người dùng!  ${JSON.stringify(userInfoResult)}`, "error");
+        return this.log(`Unable to get user info! ${JSON.stringify(userInfoResult)}`, "error");
       }
     } catch (error) {
-      this.log(`Lỗi khi xử lý tài khoản: ${error.message}`, "error");
+      this.log(`Error processing account: ${error.message}`, "error");
     }
 
     await new Promise((resolve) => setTimeout(resolve, 1000));
@@ -627,12 +627,12 @@ async function main() {
   //   const wallets = loadData("wallets.txt");
 
   if (queryIds.length > proxies.length && settings.USE_PROXY) {
-    console.log("Số lượng proxy và data phải bằng nhau.".red);
+    console.log("The number of proxies and data must be equal.".red);
     console.log(`Data: ${queryIds.length}`);
     console.log(`Proxy: ${proxies.length}`);
     process.exit(1);
   }
-  console.log(colors.yellow("Tool được phát triển bởi nhóm tele Airdrop Hunter Siêu Tốc (https://t.me/airdrophuntersieutoc)"));
+  console.log(colors.yellow("Tool developed by Airdrop Hunter Super Speed ​​tele team (https://t.me/airdrophuntersieutoc)"));
 
   if (!settings.USE_PROXY) {
     console.log(`You are running bot without proxies, enable use proxy by key USE_PROXY in file .env`.yellow);
@@ -640,7 +640,7 @@ async function main() {
   let maxThreads = settings.USE_PROXY ? settings.MAX_THEADS : settings.MAX_THEADS_NO_PROXY;
 
   const { endpoint: hasIDAPI, message } = await checkBaseUrl();
-  if (!hasIDAPI) return console.log(`Không thể tìm thấy ID API, thử lại sau!`.red);
+  if (!hasIDAPI) return console.log(`Could not find API ID, try again later!`.red);
   console.log(`${message}`.yellow);
   // process.exit();
   queryIds.map((val, i) => new Boink(val, i, proxies[i], hasIDAPI, tokens).createUserAgent());
@@ -674,13 +674,13 @@ async function main() {
               resolve();
             });
             worker.on("error", (error) => {
-              console.log(`Lỗi worker cho tài khoản ${currentIndex}: ${error.message}`);
+              console.log(`Worker error for account ${currentIndex}: ${error.message}`);
               worker.terminate();
             });
             worker.on("exit", (code) => {
               worker.terminate();
               if (code !== 0) {
-                errors.push(`Worker cho tài khoản ${currentIndex} thoát với mã: ${code}`);
+                errors.push(`Worker for account ${currentIndex} exited with code: ${code}`);
               }
               resolve();
             });
@@ -701,14 +701,14 @@ async function main() {
       }
     }
     await sleep(3);
-    console.log(`=============Hoàn thành tất cả tài khoản | Chờ ${settings.TIME_SLEEP} phút=============`.magenta);
+    console.log(`===============Done all accounts | Wait ${settings.TIME_SLEEP} minutes=============`.magenta);
     await sleep(settings.TIME_SLEEP * 60);
   }
 }
 
 if (isMainThread) {
   main().catch((error) => {
-    console.log("Lỗi rồi:", error);
+    console.log("Error:", error);
     process.exit(1);
   });
 } else {
